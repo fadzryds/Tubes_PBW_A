@@ -36,3 +36,7 @@ Route::get('/dashboard', function () {
 
 // Logout
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+Route::get('/service', function () {
+    return view('user.Service');
+})->name('service');
