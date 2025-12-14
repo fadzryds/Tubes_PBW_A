@@ -33,102 +33,103 @@
         </div>
     
         <div class="service-grid">
-            <div class="service-card">
-                <img src="/images/oli.jpeg" alt="Oli Mesin">
-                <h3>Oli Mesin</h3>
-                <p>Kualitas terbaik untuk menjaga performa motor.</p>
-                <p class="price">Rp. 2.000.000</p>
-                <a href="#" class="btn-book">Booking</a>
-            </div>
-    
-            <div class="service-card">
-                <img src="/images/aki.jpeg" alt="Aki Motor">
-                <h3>Aki Motor</h3>
-                <p>Daya tahan lama dan aman digunakan.</p>
-                <p class="price">Rp. 2.000.000</p>
-                <a href="#" class="btn-book">Booking</a>
-            </div>
-    
-            <div class="service-card">
-                <img src="/images/kampas.jpg" alt="Kampas Rem">
-                <h3>Kampas Rem</h3>
-                <p>Memberikan pengereman yang optimal.</p>
-                <p class="price">Rp. 2.000.000</p>
-                <a href="#" class="btn-book">Booking</a>
-            </div>
-    
-            <div class="service-card">
-                <img src="/images/v-belt.jpeg" alt="V-Belt Motor">
-                <h3>V-Belt Motor</h3>
-                <p>Kuat dan tahan lama untuk motor matic.</p>
-                <p class="price">Rp. 2.000.000</p>
-                <a href="#" class="btn-book">Booking</a>
-            </div>
+    <div class="service-card">
+        <img src="/images/oli.jpeg" alt="Oli Mesin">
+        <h3>Oli Mesin</h3>
+        <p>Kualitas terbaik untuk menjaga performa motor.</p>
+        <p class="price">Rp. 2.000.000</p>
+        <a href="{{ route('sparepart.show', 1) }}" class="btn-book">Booking</a>
+    </div>
 
-            <div class="service-card">
-                <img src="/images/oli.jpeg" alt="Oli Mesin">
-                <h3>Oli Mesin</h3>
-                <p>Kualitas terbaik untuk menjaga performa motor.</p>
-                <p class="price">Rp. 2.000.000</p>
-                <a href="#" class="btn-book">Booking</a>
-            </div>
-    
-            <div class="service-card">
-                <img src="/images/aki.jpeg" alt="Aki Motor">
-                <h3>Aki Motor</h3>
-                <p>Daya tahan lama dan aman digunakan.</p>
-                <p class="price">Rp. 2.000.000</p>
-                <a href="#" class="btn-book">Booking</a>
-            </div>
-    
-            <div class="service-card">
-                <img src="/images/kampas.jpg" alt="Kampas Rem">
-                <h3>Kampas Rem</h3>
-                <p>Memberikan pengereman yang optimal.</p>
-                <p class="price">Rp. 2.000.000</p>
-                <a href="#" class="btn-book">Booking</a>
-            </div>
-    
-            <div class="service-card">
-                <img src="/images/v-belt.jpeg" alt="V-Belt Motor">
-                <h3>V-Belt Motor</h3>
-                <p>Kuat dan tahan lama untuk motor matic.</p>
-                <p class="price">Rp. 2.000.000</p>
-                <a href="#" class="btn-book">Booking</a>
-            </div>
+    <div class="service-card">
+        <img src="/images/aki.jpeg" alt="Aki Motor">
+        <h3>Aki Motor</h3>
+        <p>Daya tahan lama dan aman digunakan.</p>
+        <p class="price">Rp. 2.000.000</p>
+        <a href="{{ route('sparepart.show', 2) }}" class="btn-book">Booking</a>
+    </div>
 
-            <div class="service-card">
-                <img src="/images/oli.jpeg" alt="Oli Mesin">
-                <h3>Oli Mesin</h3>
-                <p>Kualitas terbaik untuk menjaga performa motor.</p>
-                <p class="price">Rp. 2.000.000</p>
-                <a href="#" class="btn-book">Booking</a>
-            </div>
-    
-            <div class="service-card">
-                <img src="/images/aki.jpeg" alt="Aki Motor">
-                <h3>Aki Motor</h3>
-                <p>Daya tahan lama dan aman digunakan.</p>
-                <p class="price">Rp. 2.000.000</p>
-                <a href="#" class="btn-book">Booking</a>
-            </div>
-    
-            <div class="service-card">
-                <img src="/images/kampas.jpg" alt="Kampas Rem">
-                <h3>Kampas Rem</h3>
-                <p>Memberikan pengereman yang optimal.</p>
-                <p class="price">Rp. 2.000.000</p>
-                <a href="#" class="btn-book">Booking</a>
-            </div>
-    
-            <div class="service-card">
-                <img src="/images/v-belt.jpeg" alt="V-Belt Motor">
-                <h3>V-Belt Motor</h3>
-                <p>Kuat dan tahan lama untuk motor matic.</p>
-                <p class="price">Rp. 2.000.000</p>
-                <a href="#" class="btn-book">Booking</a>
-            </div>
-        </div>
+    <div class="service-card">
+        <img src="/images/kampas.jpg" alt="Kampas Rem">
+        <h3>Kampas Rem</h3>
+        <p>Memberikan pengereman yang optimal.</p>
+        <p class="price">Rp. 2.000.000</p>
+        <a href="{{ route('sparepart.show', 3) }}" class="btn-book">Booking</a>
+    </div>
+
+    <div class="service-card">
+        <img src="/images/v-belt.jpeg" alt="V-Belt Motor">
+        <h3>V-Belt Motor</h3>
+        <p>Kuat dan tahan lama untuk motor matic.</p>
+        <p class="price">Rp. 2.000.000</p>
+        <a href="{{ route('sparepart.show', 4) }}" class="btn-book">Booking</a>
+    </div>
+
+    <div class="service-card">
+        <img src="/images/oli.jpeg" alt="Oli Mesin">
+        <h3>Oli Mesin</h3>
+        <p>Kualitas terbaik untuk menjaga performa motor.</p>
+        <p class="price">Rp. 2.000.000</p>
+        <a href="{{ route('sparepart.show', 5) }}" class="btn-book">Booking</a>
+    </div>
+
+    <div class="service-card">
+        <img src="/images/aki.jpeg" alt="Aki Motor">
+        <h3>Aki Motor</h3>
+        <p>Daya tahan lama dan aman digunakan.</p>
+        <p class="price">Rp. 2.000.000</p>
+        <a href="{{ route('sparepart.show', 6) }}" class="btn-book">Booking</a>
+    </div>
+
+    <div class="service-card">
+        <img src="/images/kampas.jpg" alt="Kampas Rem">
+        <h3>Kampas Rem</h3>
+        <p>Memberikan pengereman yang optimal.</p>
+        <p class="price">Rp. 2.000.000</p>
+        <a href="{{ route('sparepart.show', 7) }}" class="btn-book">Booking</a>
+    </div>
+
+    <div class="service-card">
+        <img src="/images/v-belt.jpeg" alt="V-Belt Motor">
+        <h3>V-Belt Motor</h3>
+        <p>Kuat dan tahan lama untuk motor matic.</p>
+        <p class="price">Rp. 2.000.000</p>
+        <a href="{{ route('sparepart.show', 8) }}" class="btn-book">Booking</a>
+    </div>
+
+    <div class="service-card">
+        <img src="/images/oli.jpeg" alt="Oli Mesin">
+        <h3>Oli Mesin</h3>
+        <p>Kualitas terbaik untuk menjaga performa motor.</p>
+        <p class="price">Rp. 2.000.000</p>
+        <a href="{{ route('sparepart.show', 9) }}" class="btn-book">Booking</a>
+    </div>
+
+    <div class="service-card">
+        <img src="/images/aki.jpeg" alt="Aki Motor">
+        <h3>Aki Motor</h3>
+        <p>Daya tahan lama dan aman digunakan.</p>
+        <p class="price">Rp. 2.000.000</p>
+        <a href="{{ route('sparepart.show', 10) }}" class="btn-book">Booking</a>
+    </div>
+
+    <div class="service-card">
+        <img src="/images/kampas.jpg" alt="Kampas Rem">
+        <h3>Kampas Rem</h3>
+        <p>Memberikan pengereman yang optimal.</p>
+        <p class="price">Rp. 2.000.000</p>
+        <a href="{{ route('sparepart.show', 11) }}" class="btn-book">Booking</a>
+    </div>
+
+    <div class="service-card">
+        <img src="/images/v-belt.jpeg" alt="V-Belt Motor">
+        <h3>V-Belt Motor</h3>
+        <p>Kuat dan tahan lama untuk motor matic.</p>
+        <p class="price">Rp. 2.000.000</p>
+        <a href="{{ route('sparepart.show', 12) }}" class="btn-book">Booking</a>
+    </div>
+</div>
+
     </section>
     
     <footer class="footer">

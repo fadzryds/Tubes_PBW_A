@@ -19,8 +19,8 @@
             <a href="#about">About</a>
         </nav>
         <div class="auth-buttons">
-            <a href="#" class="btn-register">Register</a>
-            <a href="#" class="btn-login">Log in</a>
+            <a href="/register" class="btn-register">Register</a>
+            <a href="/login" class="btn-login">Log in</a>
         </div>
     </header>
 
@@ -39,7 +39,7 @@
     <section class="service-section" id="sparepart">
         <div class="service-header">
         <h2>Sparepart</h2>
-        <a href="#" class="btn-next">Selanjutnya</a>
+        <a href="{{ route('sparepart') }}" class="btn-next">Selanjutnya</a>
         </div>
     
         <div class="service-grid">
@@ -48,7 +48,7 @@
                 <h3>Oli Mesin</h3>
                 <p>Kualitas terbaik untuk menjaga performa motor.</p>
                 <p class="price">Rp. 2.000.000</p>
-                <a href="#" class="btn-book">Booking</a>
+                <a href="#" class="btn-book">Pesan Sekarang!</a>
             </div>
     
             <div class="service-card">
@@ -56,7 +56,7 @@
                 <h3>Aki Motor</h3>
                 <p>Daya tahan lama dan aman digunakan.</p>
                 <p class="price">Rp. 2.000.000</p>
-                <a href="#" class="btn-book">Booking</a>
+                <a href="#" class="btn-book">Pesan Sekarang!</a>
             </div>
     
             <div class="service-card">
@@ -64,7 +64,7 @@
                 <h3>Kampas Rem</h3>
                 <p>Memberikan pengereman yang optimal.</p>
                 <p class="price">Rp. 2.000.000</p>
-                <a href="#" class="btn-book">Booking</a>
+                <a href="#" class="btn-book">Pesan Sekarang!</a>
             </div>
     
             <div class="service-card">
@@ -72,7 +72,7 @@
                 <h3>V-Belt Motor</h3>
                 <p>Kuat dan tahan lama untuk motor matic.</p>
                 <p class="price">Rp. 2.000.000</p>
-                <a href="#" class="btn-book">Booking</a>
+                <a href="#" class="btn-book">Pesan Sekarang!</a>
             </div>
         </div>
     </section>
@@ -80,7 +80,7 @@
     <section class="service-section" id="service">
         <div class="service-header">
             <h2>Service</h2>
-            <a href="#" class="btn-next">Selanjutnya</a>
+            <a href="{{ route('service') }}" class="btn-next">Selanjutnya</a>
         </div>
     
         <div class="service-grid">
@@ -89,7 +89,7 @@
                 <h3>Paket Service Eliminator 1</h3>
                 <p class="detail">Service + Ganti Oli</p>
                 <p class="price">Rp. 2.000.000</p>
-                <a href="#" class="btn-book">Booking</a>
+                <a href="#" class="btn-book">Booking!</a>
             </div>
     
             <div class="service-card">
@@ -97,7 +97,7 @@
                 <h3>Paket Service Eliminator 2</h3>
                 <p class="detail">Service + Ganti Velg</p>
                 <p class="price">Rp. 5.000.000</p>
-                <a href="#" class="btn-book">Booking</a>
+                <a href="#" class="btn-book">Booking!</a>
             </div>
     
             <div class="service-card">
@@ -105,7 +105,7 @@
                 <h3>Paket Service Eliminator 3</h3>
                 <p class="detail">Service + Ganti Rantai</p>
                 <p class="price">Rp. 950.000</p>
-                <a href="#" class="btn-book">Booking</a>
+                <a href="#" class="btn-book">Booking!</a>
             </div>
     
             <div class="service-card">
@@ -113,7 +113,7 @@
                 <h3>Paket Service Eliminator 4</h3>
                 <p class="detail">Service + Ganti Seal</p>
                 <p class="price">Rp. 3.000.000</p>
-                <a href="#" class="btn-cart">🛒 Keranjang</a>
+                <a href="#" class="btn-book">Booking</a>
             </div>
         </div>
     </section>

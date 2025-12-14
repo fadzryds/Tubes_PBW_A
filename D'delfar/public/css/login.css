@@ -1,0 +1,195 @@
+/* ============= GLOBAL ============= */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #d7e1ec 0%, #f5f7fa 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* ============= WRAPPER ============= */
+.login-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* ============= MAIN CARD ============= */
+.login-card {
+    display: flex;
+    gap: 35px;
+    background: rgba(255, 255, 255, 0.40);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-radius: 28px;
+    padding: 40px;
+    width: 880px;
+    box-shadow: 0 18px 45px rgba(0,0,0,0.12);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    animation: fadeIn 0.6s ease;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============= IMAGE AREA ============= */
+.image-box img {
+    width: 340px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.image-box img:hover {
+    transform: scale(1.03);
+}
+
+/* ============= FORM AREA ============= */
+.form-box {
+    flex: 1;
+}
+
+.form-box h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #2d2d2d;
+}
+
+/* ============= LABELS ============= */
+label {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 8px 0 6px;
+    color: #333;
+}
+
+/* ============= INPUTS ============= */
+input {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 15px;
+    border: 1px solid rgba(150,150,150,0.45);
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 12px;
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(10px);
+    transition: 0.25s;
+}
+
+input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
+    background: rgba(255, 255, 255, 0.75);
+}
+
+/* ============= PASSWORD BOX ============= */
+.password-box {
+    position: relative;
+}
+
+.password-box input {
+    padding-right: 15px;
+}
+
+/* eye icon */
+.toggle {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    transition: 0.25s;
+}
+
+.toggle:hover {
+    transform: translateY(-50%) scale(1.15);
+}
+
+/* ============= FORGOT PASSWORD ============= */
+.forget {
+    font-size: 13px;
+    display: block;
+    margin-bottom: 14px;
+    color: #4b4b4b;
+}
+
+/* ============= LOGIN BUTTON ============= */
+.btn-login {
+    width: 100%;
+    padding: 13px;
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: white;
+    border: none;
+    border-radius: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.35);
+    transition: 0.25s;
+}
+
+.btn-login:hover {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    box-shadow: 0 10px 26px rgba(37, 99, 235, 0.45);
+}
+
+/* ============= DIVIDER ============= */
+.divider {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.divider span {
+    font-size: 14px;
+    color: #555;
+}
+
+/* ============= GOOGLE BUTTON ============= */
+.google-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    border: 1px solid rgba(150,150,150,0.45);
+    padding: 12px;
+    border-radius: 15px;
+    transition: 0.25s;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.google-btn:hover {
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.google-btn img {
+    width: 22px;
+}
+
+/* ============= RESPONSIVE ============= */
+@media (max-width: 900px) {
+    .login-card {
+        flex-direction: column;
+        width: 95%;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .image-box img {
+        width: 260px;
+    }
+}

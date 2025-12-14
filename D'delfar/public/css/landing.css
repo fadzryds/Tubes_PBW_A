@@ -55,6 +55,7 @@ body {
 
 .btn-login {
     background: #7a0000;
+    border: 2px solid #7a0000;
     color: white;
 }
 

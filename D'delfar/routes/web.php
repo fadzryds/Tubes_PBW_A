@@ -3,14 +3,12 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\SparepartController;
 
 Route::get('/', function () {
     return view('LandingPage');
 });
 
-Route::get('/sparepart', function () {
-    return view('user.Sparepart');
-})->name('sparepart');
 
 //login
 Route::get('/login', function () {
@@ -37,6 +35,16 @@ Route::get('/dashboard', function () {
 // Logout
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
+Route::get('/sparepart', function () {
+    return view('user.Sparepart');
+})->name('sparepart');
+
+Route::get('/description', function () { return view('user.Description'); })->name('description'); Route::get('/sparepart/{id}', [SparepartController::class, 'show'])->name('sparepart.show');
+
 Route::get('/service', function () {
-    return view('user.Service');
+    return view('user.Services');
 })->name('service');
+
+Route::get('/bookingservice', function () {
+    return view('user.BookingServices');
+})->name('bookingservice');

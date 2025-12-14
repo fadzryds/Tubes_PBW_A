@@ -38,7 +38,7 @@
                 <h3>Paket Service Eliminator 1</h3>
                 <p class="detail">Service + Ganti Oli</p>
                 <p class="price">Rp. 2.000.000</p>
-                <a href="#" class="btn-book">Booking</a>
+                <a href="{{ route('bookingservice')}}" class="btn-book">Booking</a>
             </div>
     
             <div class="service-card">
@@ -176,7 +176,7 @@
         </div>
     
         <div class="footer-bottom">
-            <p>©️ 2025 D'Delfar Bengkel Motor. All Rights Reserved.</p>
+            <p>© 2025 D'Delfar Bengkel Motor. All Rights Reserved.</p>
         </div>
     </footer>
     
