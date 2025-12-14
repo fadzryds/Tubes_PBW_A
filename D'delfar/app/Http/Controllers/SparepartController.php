@@ -105,6 +105,6 @@ class SparepartController extends Controller
             return $item['id'] != $id;
         });
 
-        return view('user.description', compact('sparepart', 'otherSpareparts'));
+        return view('landing.description', compact('sparepart', 'otherSpareparts'));
     }
 }

@@ -1,195 +1,183 @@
-/* ============= GLOBAL ============= */
+/* --- Global --- */
 body {
     margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #d7e1ec 0%, #f5f7fa 100%);
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+/* --- Wrapper --- */
+.login-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow: hidden;
-}
-
-/* ============= WRAPPER ============= */
-.login-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    min-height: 100vh;
     padding: 20px;
 }
 
-/* ============= MAIN CARD ============= */
+/* --- Card --- */
 .login-card {
     display: flex;
-    gap: 35px;
-    background: rgba(255, 255, 255, 0.40);
-    backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border-radius: 28px;
-    padding: 40px;
-    width: 880px;
-    box-shadow: 0 18px 45px rgba(0,0,0,0.12);
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    animation: fadeIn 0.6s ease;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
-/* Fade-in animation */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+/* --- Image --- */
+.image-box {
+    flex: 1 1 300px;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* ============= IMAGE AREA ============= */
 .image-box img {
-    width: 340px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    transition: 0.3s;
+    max-width: 100%;
+    height: auto;
 }
 
-.image-box img:hover {
-    transform: scale(1.03);
-}
-
-/* ============= FORM AREA ============= */
+/* --- Form --- */
 .form-box {
-    flex: 1;
+    flex: 1 1 400px;
+    padding: 40px;
+    box-sizing: border-box;
 }
 
 .form-box h2 {
     margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    color: #2d2d2d;
+    text-align: center;
 }
 
-/* ============= LABELS ============= */
-label {
+/* --- Inputs --- */
+.form-box label {
     display: block;
-    font-size: 15px;
-    font-weight: 500;
-    margin: 8px 0 6px;
-    color: #333;
+    margin: 10px 0 5px;
+    font-weight: bold;
 }
 
-/* ============= INPUTS ============= */
-input {
+.form-box input {
     width: 100%;
-    padding: 14px 16px;
-    border-radius: 15px;
-    border: 1px solid rgba(150,150,150,0.45);
-    outline: none;
-    font-size: 15px;
-    margin-bottom: 12px;
-    background: rgba(255, 255, 255, 0.55);
-    backdrop-filter: blur(10px);
-    transition: 0.25s;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
-input:focus {
-    border-color: #3b82f6;
-    box-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
-    background: rgba(255, 255, 255, 0.75);
-}
-
-/* ============= PASSWORD BOX ============= */
+/* --- Password toggle --- */
 .password-box {
     position: relative;
 }
 
-.password-box input {
-    padding-right: 15px;
-}
-
-/* eye icon */
-.toggle {
+.password-box .toggle {
     position: absolute;
-    right: 14px;
+    right: 10px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    font-size: 20px;
-    user-select: none;
-    transition: 0.25s;
 }
 
-.toggle:hover {
-    transform: translateY(-50%) scale(1.15);
-}
-
-/* ============= FORGOT PASSWORD ============= */
-.forget {
-    font-size: 13px;
-    display: block;
-    margin-bottom: 14px;
-    color: #4b4b4b;
-}
-
-/* ============= LOGIN BUTTON ============= */
+/* --- Button --- */
 .btn-login {
     width: 100%;
-    padding: 13px;
-    background: linear-gradient(135deg, #3b82f6, #2563eb);
-    color: white;
+    padding: 12px;
+    background: #28a745;
+    color: #fff;
     border: none;
-    border-radius: 16px;
+    border-radius: 6px;
     font-size: 16px;
     cursor: pointer;
-    font-weight: 500;
-    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.35);
-    transition: 0.25s;
+    margin-top: 10px;
 }
 
 .btn-login:hover {
-    background: linear-gradient(135deg, #2563eb, #1e40af);
-    box-shadow: 0 10px 26px rgba(37, 99, 235, 0.45);
+    background: #218838;
 }
 
-/* ============= DIVIDER ============= */
+/* --- Divider --- */
 .divider {
     text-align: center;
     margin: 20px 0;
+    position: relative;
 }
 
 .divider span {
-    font-size: 14px;
-    color: #555;
+    background: #fff;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
 }
 
-/* ============= GOOGLE BUTTON ============= */
+.divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #ccc;
+    z-index: 0;
+}
+
+/* --- Google button --- */
 .google-btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 6px;
     cursor: pointer;
-    border: 1px solid rgba(150,150,150,0.45);
-    padding: 12px;
-    border-radius: 15px;
-    transition: 0.25s;
-    background: rgba(255, 255, 255, 0.6);
-}
-
-.google-btn:hover {
-    background: rgba(255, 255, 255, 0.85);
 }
 
 .google-btn img {
-    width: 22px;
+    width: 20px;
+    margin-right: 8px;
 }
 
-/* ============= RESPONSIVE ============= */
-@media (max-width: 900px) {
+/* --- Alert --- */
+#alertBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ff4d4f;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    display: none;
+    z-index: 9999;
+    text-align: center;
+    font-weight: bold;
+    animation: fadeInOut 3s forwards;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
     .login-card {
         flex-direction: column;
-        width: 95%;
-        text-align: center;
-        padding: 30px;
     }
 
-    .image-box img {
-        width: 260px;
+    .image-box {
+        flex: 1 1 auto;
+        padding: 20px;
+    }
+
+    .form-box {
+        flex: 1 1 auto;
+        padding: 30px 20px;
     }
 }

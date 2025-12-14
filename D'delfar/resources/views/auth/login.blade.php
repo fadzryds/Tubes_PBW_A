@@ -21,22 +21,21 @@
         <div class="form-box">
             <h2>Log in</h2>
 
-            <form action="{{ route('login.post') }}" method="POST">
+            <form action="{{ route('login') }}" method="POST">
                 @csrf
-
-                <label>Login email or phone number</label>
-                <input type="text" name="email" placeholder="Enter your email">
-
+            
+                <label>Email</label>
+                <input type="text" name="email" placeholder="Enter your email" required>
+            
                 <label>Password</label>
                 <div class="password-box">
                     <input type="password" name="password" id="password">
-                    <span class="toggle" onclick="togglePassword()" id="toggleIcon">👁️</span>
+                    <span class="toggle" onclick="togglePassword()" id="toggleIcon">👁️‍🗨️</span>
                 </div>
-
-                <a href="#" class="forget">forget password?</a>
-
+            
                 <button class="btn-login">Log in</button>
             </form>
+            
 
             <div class="divider">
                 <span>or login with</span>
@@ -58,10 +57,10 @@ function togglePassword() {
 
     if (pw.type === "password") {
         pw.type = "text";
-        icon.textContent = "👁️‍🗨️"; // mata terbuka
+        icon.textContent = "👁️"; 
     } else {
         pw.type = "password";
-        icon.textContent = "👁️"; // mata tertutup
+        icon.textContent = "👁️‍🗨️"; 
     }
 }
 </script>
